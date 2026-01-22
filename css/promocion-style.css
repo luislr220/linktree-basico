@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../resources/portada/system_failure_portada.jpeg);
+  background-size: cover;
+  backdrop-filter: blur(10px);
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.contenedor-btn {
+  background-color: #212121;
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  border: 1px solid #ffffff;
+}
+
+.contenedor-btn p {
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.5em;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.portada img {
+  object-fit: contain;
+  width: 100%;
+  display: block;
+  border-bottom: 5px solid #ffffff;
+  border-radius: 15px 15px 0 0;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 20px;
+  border: 1px solid #ffffff;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.btns img {
+  max-height: 2em;
+  width: auto;
+}
+
+.img-despues {
+  display: none;
+}
+
+.btns:hover .img-despues {
+  display: block;
+}
+
+.btns:hover img {
+  display: none;
+}
+
+.btns button {
+  background: transparent;
+  color: #ffffff;
+  border: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.btns:hover button,
+.btns:hover {
+  background-color: #ffffff;
+  color: #212121;
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+  .contenedor {
+    max-width: 90%;
+  }
+  .contenedor-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .portada {
+    width: 50%;
+    border-right: 5px solid #ffffff;
+  }
+
+  .portada img {
+    border-radius: 15px 0 0 15px;
+    border-bottom: none;
+  }
+
+  .btns-content-pc {
+    width: 50%;
+  }
+
+  .contenedor-btn p {
+    font-size: 40px;
+  }
+
+  .btns img {
+    max-height: 3em;
+    width: auto;
+  }
+}
