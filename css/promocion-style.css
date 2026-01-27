@@ -60,6 +60,8 @@ body {
 .btns img {
   max-height: 2em;
   width: auto;
+  aspect-ratio: 3;
+  object-fit: contain;
 }
 
 .img-despues {
@@ -128,5 +130,6 @@ a {
   .btns img {
     max-height: 3em;
     width: auto;
+    aspect-ratio: 3/1;
   }
 }
